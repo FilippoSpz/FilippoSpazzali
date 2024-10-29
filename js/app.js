@@ -1,5 +1,7 @@
 /* Audio */
-var x = document.getElementById("myAudio");
+// noinspection JSUnresolvedReference
+
+let x = document.getElementById("myAudio");
 
 function playAudio() {
     x.play();
@@ -13,15 +15,15 @@ function pauseAudio() {
 
 /* Navbar */
 $('.slider').each(function () {
-    var $this = $(this);
-    var $group = $this.find('.slide_group');
-    var $slides = $this.find('.slide');
-    var bulletArray = [];
-    var currentIndex = 0;
-    var timeout;
+    const $this = $(this);
+    const $group = $this.find('.slide_group');
+    const $slides = $this.find('.slide');
+    const bulletArray = [];
+    let currentIndex = 0;
+    let timeout;
 
     function move(newIndex) {
-        var animateLeft, slideLeft;
+        let animateLeft, slideLeft;
 
         advance();
 
@@ -88,7 +90,7 @@ $('.slider').each(function () {
     });
 
     $.each($slides, function (index) {
-        var $button = $('<a class="slide_btn">&bull;</a>');
+        const $button = $('<a class="slide_btn">&bull;</a>');
 
         if (index === currentIndex) {
             $button.addClass('active');
@@ -105,10 +107,10 @@ $('.slider').each(function () {
 /* End Navbar */
 
 function show() {
-    var var1, var2, var3;
-    var1 = document.getElementById('name').value;
-    var2 = document.getElementById('mail').value;
-    var3 = document.getElementById('text').value;
+    let var1, var2, var3;
+    var1 = document.getElementById('name').value.toLowerCase();
+    var2 = document.getElementById('mail').value.toLowerCase();
+    var3 = document.getElementById('text').value.toLowerCase();
 
     alert("Name: " + var1 + '\n' + "Mail: " + var2 + '\n' + "Text: " + var3 + '\n\n' + "You will be informed as soon as possible");
 

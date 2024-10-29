@@ -14,64 +14,51 @@
 <body>
 
 <!-- Logo -->
-<img src="img/logo.png" alt="logo" style="margin-top: -30px; height: 200px"><br>
+<img src="img/logo.png" alt="logo" class="logo"><br>
 <!-- End Logo -->
 
 <!-- Navbar -->
-<a href="index.html" class="btn" style="text-decoration: underline; text-underline-offset: 0.3em;">Home</a>
+<a href="index.html" class="btn btn-active">Home</a>
 <a href="shows.html" class="btn">Shows</a>
 <a href="top10djs.html" class="btn">Top 10 djs</a>
 <a href="contact.html" class="btn">Contact</a>
 <!-- End Navbar -->
 
 <!-- Carousel -->
-<div class="slider" style="margin-top: 50px">
+<div class="slider">
     <div class="slide_viewer">
         <div class="slide_group">
             <div class="slide">
-                <img src="img/home/slide1.jpg" alt="img" style="width: 1080px; height: auto">
+                <img src="img/home/slide1.jpg" alt="img" class="img-slider">
             </div>
             <div class="slide">
-                <img src="img/home/slide2.jpg" alt="img" style="width: 1080px; height: auto;">
+                <img src="img/home/slide2.jpg" alt="img" class="img-slider">
             </div>
             <div class="slide">
-                <img src="img/home/slide3.jpg" alt="img" style="width: 1080px; height: auto">
+                <img src="img/home/slide3.jpg" alt="img" class="img-slider">
             </div>
             <div class="slide">
-                <img src="img/home/slide4.jpg" alt="img" style="width: 1080px; height: auto">
+                <img src="img/home/slide4.jpg" alt="img" class="img-slider">
             </div>
         </div>
     </div>
 </div>
-
 <div class="slide_buttons">
 </div>
 
 <div class="directional_nav">
     <div class="previous_btn" title="Previous">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-             width="65px" height="65px" viewBox="-11 -11.5 65 66">
-            <g>
-                <g>
-                    <path fill="#474544" d="M-10.5,22.118C-10.5,4.132,4.133-10.5,22.118-10.5S54.736,4.132,54.736,22.118
-      c0,17.985-14.633,32.618-32.618,32.618S-10.5,40.103-10.5,22.118z M-8.288,22.118c0,16.766,13.639,30.406,30.406,30.406 c16.765,0,30.405-13.641,30.405-30.406c0-16.766-13.641-30.406-30.405-30.406C5.35-8.288-8.288,5.352-8.288,22.118z"/>
-                    <path fill="#474544"
-                          d="M25.43,33.243L14.628,22.429c-0.433-0.432-0.433-1.132,0-1.564L25.43,10.051c0.432-0.432,1.132-0.432,1.563,0 c0.431,0.431,0.431,1.132,0,1.564L16.972,21.647l10.021,10.035c0.432,0.433,0.432,1.134,0,1.564  c-0.215,0.218-0.498,0.323-0.78,0.323C25.929,33.569,25.646,33.464,25.43,33.243z"/>
-                </g>
-            </g>
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+             width="200px" height="200px" viewBox="-11 -11.5 65 66">
+            <path fill="white"
+                  d="M10 20A10 10 0 1 0 0 10a10 10 0 0 0 10 10zm1.289-15.7 1.422 1.4-4.3 4.344 4.289 4.245-1.4 1.422-5.714-5.648z"/>
         </svg>
     </div>
     <div class="next_btn" title="Next">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-             width="65px" height="65px" viewBox="-11 -11.5 65 66">
-            <g>
-                <g>
-                    <path fill="#474544"
-                          d="M22.118,54.736C4.132,54.736-10.5,40.103-10.5,22.118C-10.5,4.132,4.132-10.5,22.118-10.5  c17.985,0,32.618,14.632,32.618,32.618C54.736,40.103,40.103,54.736,22.118,54.736z M22.118-8.288  c-16.765,0-30.406,13.64-30.406,30.406c0,16.766,13.641,30.406,30.406,30.406c16.768,0,30.406-13.641,30.406-30.406 C52.524,5.352,38.885-8.288,22.118-8.288z"/>
-                    <path fill="#474544"
-                          d="M18.022,33.569c 0.282,0-0.566-0.105-0.781-0.323c-0.432-0.431-0.432-1.132,0-1.564l10.022-10.035      L17.241,11.615c 0.431-0.432-0.431-1.133,0-1.564c0.432-0.432,1.132-0.432,1.564,0l10.803,10.814c0.433,0.432,0.433,1.132,0,1.564 L18.805,33.243C18.59,33.464,18.306,33.569,18.022,33.569z"/>
-                </g>
-            </g>
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+             width="200px" height="200px" viewBox="-11 -11.5 65 66">
+            <path fill="white"
+                  d="M10 20A10 10 0 1 0 0 10a10 10 0 0 0 10 10zM8.711 4.3l5.7 5.766L8.7 15.711l-1.4-1.422 4.289-4.242-4.3-4.347z"/>
         </svg>
     </div>
 </div>
@@ -81,11 +68,10 @@
 <!-- Columns Layout -->
 <div class="row" style="margin-bottom: 30px; margin-top: -150px">
     <div class="column">
-        <img src="img/home/squared1.png" alt="img" style="width: 400px">
+        <img src="img/home/squared1.png" alt="img" class="img-index">
     </div>
-    <div class="column"
-         style="color: white; font-size: 20px; text-transform: uppercase; font-family: Oswald, sans-serif; text-align: left; font-weight: bold; margin-top: 3%">
-        <div style="padding-right: 150px;">
+    <div class="column column-index">
+        <div style="padding-right: 150px; margin-top: 5%">
             Are you ready to elevate your music experience? <br>
             Discover the world’s top DJs and their electrifying sets that keep the dance floors alive. <br>
             From heart-pounding beats to unforgettable performances, there's so much to explore. Join us on our journey
@@ -95,11 +81,10 @@
         </div>
     </div>
 </div>
-<hr style="border: none; height: 3px; background-color: red; border-radius: 25px">
-<div class="row" style="margin-top: 50px">
-    <div class="column"
-         style="color: white; font-size: 20px; text-transform: uppercase; font-family: Oswald, sans-serif; text-align: right; font-weight: bold; margin-top: 3%">
-        <div style="padding-left: 150px">
+<hr class="line">
+<div class="row" style="margin-top: 50px; margin-bottom: 50px">
+    <div class="column column-index">
+        <div style="padding-left: 150px; margin-top: 5%">
             We are thrilled to announce our collaboration with ade, a passionate sponsor dedicated to the vibrant world
             of
             dance and EDM music.
@@ -113,12 +98,14 @@
         </div>
     </div>
     <div class="column">
-        <img src="img/home/squared2.png" alt="img" style="width: 400px">
+        <img src="img/home/squared2.png" alt="img" class="img-index">
     </div>
 </div>
 <!-- End Columns Layout -->
-<hr style="border: none; height: 3px; background-color: red; border-radius: 25px">
 
+<hr class="line">
+
+<!-- Footer -->
 <footer>
     <div class="footer1">
         <div class="f-item-con">
@@ -149,6 +136,7 @@
         <div class='cr-con'>Copyright &copy; 2024</div>
     </div>
 </footer>
+<!-- End Footer -->
 
 <script src="js/app.js"></script>
 <script src="https://www.gdprset.it/widget/gdpr-it-1.js" type="text/javascript"></script>
